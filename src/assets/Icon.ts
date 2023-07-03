@@ -1,0 +1,13 @@
+export { ReactComponent as IconMenu } from "./icons/icon-menu.svg";
+export { ReactComponent as IconArrowDown } from "./icons/icon-arrow-down.svg";
+export { ReactComponent as IconDashboard } from "./icons/icon-dashboard.svg";
+export { ReactComponent as IconPerson } from "./icons/icon-person.svg";
+export { ReactComponent as IconGroup } from "./icons/icon-group.svg";
+export { ReactComponent as IconFilter } from "./icons/icon-filter.svg";
+export { ReactComponent as IconSearch } from "./icons/icon-search.svg";
+export { ReactComponent as IconSuccess } from "./icons/icon-success.svg";
+export { ReactComponent as IconReload } from "./icons/icon-reload-time.svg";
+export { ReactComponent as IconList } from "./icons/icon-list.svg";
+export { ReactComponent as IconClose} from "./icons/icon-close.svg";
+export { ReactComponent as IconNoData} from "./icons/icon-nodata.svg";
+export { ReactComponent as Icon404} from "./icons/icon-404.svg";

@@ -1,0 +1,52 @@
+@use "./../../scss/" as *;
+
+.box-table {
+  margin-top: 6px;
+  border: 1px solid $border-color;
+  border-radius: 4px;
+  overflow: hidden;
+
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    display: table;
+
+    thead {
+      tr {
+        background-color: $backgound-color;
+        border-bottom: 1px solid $border-color;
+        th {
+          padding: 12px 8px;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 16px;
+          color: $text-color-17;
+        }
+      }
+    }
+
+    tbody {
+      tr {
+        border-bottom: 1px solid $border-color;
+        &:hover {
+          background-color: $backgound-active;
+        }
+        td {
+          padding: 16px 8px;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 16px;
+          color: $text-color-17;
+
+          a {
+            color: #007eff;
+          }
+        }
+      }
+
+      .bg {
+        background-color: rgba(0, 0, 0, 0.05);
+      }
+    }
+  }
+}
