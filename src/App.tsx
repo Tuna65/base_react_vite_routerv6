@@ -1,8 +1,8 @@
-import React from "react";
-import { Routes, Route, Navigate } from "react-router-dom";
-import Layout from "./routes/Layout/Layout";
-import ProtectedRoute from "./page/ProtectedRoute";
+import { Navigate, Route, Routes } from "react-router-dom";
 import Login from "./page/Login/Login";
+import ProtectedRoute from "./page/ProtectedRoute";
+import MainLayout from "./routes/Layout/MainLayout";
+import { routerList } from "./types/general";
 
 function App() {
   return (
@@ -11,8 +11,16 @@ function App() {
         <Route path="/" element={<Navigate replace to="/login" />} />
         <Route path="/login" element={<Login />} />
         <Route element={<ProtectedRoute />}>
-          <Route element={<Layout />}>
-            {/* <Route path="/student" element={<Student />} /> */}
+          <Route element={<MainLayout />}>
+            {routerList.map((r, index) => {
+              return (
+                <Route
+                  path={r.path}
+                  element={r.component}
+                  key={`router-${index}`}
+                />
+              );
+            })}
           </Route>
         </Route>
       </Routes>

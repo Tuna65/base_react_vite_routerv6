@@ -11,3 +11,6 @@ export { ReactComponent as IconList } from "./icons/icon-list.svg";
 export { ReactComponent as IconClose} from "./icons/icon-close.svg";
 export { ReactComponent as IconNoData} from "./icons/icon-nodata.svg";
 export { ReactComponent as Icon404} from "./icons/icon-404.svg";
+export { ReactComponent as IconShoppingCartOutlined} from "./icons/icon-shopping-cart-outlined.svg";
+export { ReactComponent as IconHeart} from "./icons/icon-heart.svg";
+export { ReactComponent as IconAccountAlertOutline} from "./icons/icon-account-alert-outline.svg";
